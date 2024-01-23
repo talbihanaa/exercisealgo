@@ -1,0 +1,24 @@
+
+ALGORITHM cards
+VAR
+  tab:INTEGER
+
+   i,j,a:INTEGER
+  
+BEGIN
+FOR i FROM 0 TO tab.length-1 STEP 1  DO
+    a:=tab[i]
+   j=i-1
+
+    WHILE (j>=0 and j>a) DO
+       
+    tab[j+1]:= tab[j];
+    j:j-1
+       
+
+   
+       
+    END_WHILE
+    tab[j+1]:=a
+    END_FOR
+END
